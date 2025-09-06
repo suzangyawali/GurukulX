@@ -1,0 +1,33 @@
+{
+  "name": "gurukulx",
+  "version": "1.0.0",
+  "description": "GurukulX - A Modern Learning Management System",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm start --prefix client\"",
+    "start:client": "npm start --prefix client",
+    "start:server": "npm start --prefix server",
+    "build:client": "npm run build --prefix client",
+    "install:client": "npm install --prefix client",
+    "install:server": "npm install --prefix server",
+    "install:all": "npm run install:client && npm run install:server"
+  },
+  "keywords": [
+    "lms",
+    "learning-management-system",
+    "education",
+    "react",
+    "nodejs",
+    "mongodb",
+    "tailwindcss"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

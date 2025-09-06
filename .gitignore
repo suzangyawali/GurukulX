@@ -1,0 +1,97 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+client/build/
+client/dist/
+server/dist/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Uploads (except templates)
+server/uploads/
+server/uploads/**
+# keep template image explicit if needed
+!server/uploads/use-this-template.png
+
+# Cookies and session files (explicit)
+# allow README, disallow tracked cookie/session dumps
+*.cookie
+*.cookies
+cookies.txt
+admin_cookies.txt
+fresh_admin_cookies.txt
+fixed_admin_cookies.txt
+video_test_cookies.txt
+*.session
+*.key
+*.pem
+*.crt
+*.p12
+!README.txt
+
+# Environment files
+.env.local
+.env
+server/.env
+client/.env.local
+client/.env
+server/.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
