@@ -77,26 +77,9 @@ Screenshots are stored in the repository under `screenshots/`. Use descriptive f
 
 ## 🏗️ System Architecture
 
-```mermaid
-graph TB
-    A[React Frontend] --> B[Express.js API Gateway]
-    B --> C[Authentication Middleware]
-    B --> D[Course Controller]
-    B --> E[Payment Controller]
-REACT_APP_BASE_URL=http://localhost:4000
-    
-    C --> G[(MongoDB - Users)]
-    D --> H[(MongoDB - Courses)]
-    E --> I[(MongoDB - Payments)]
-    
-    B --> J[Razorpay Payment Gateway]
-    B --> K[Multer File Upload]
-    K --> L[Cloud Storage]
-    
-    A --> M[Redux State Management]
-    A --> N[React Router]
-    A --> O[Tailwind CSS + DaisyUI]
-```
+![System Architecture](system.jpeg)
+
+_System architecture diagram (see `system.jpeg`)._
 
 
 ### 🏠 Homepage
